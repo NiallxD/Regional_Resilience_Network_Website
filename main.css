@@ -40,8 +40,6 @@ nav {
     width: 100%;
     box-sizing: border-box;
     backdrop-filter: blur(6px);
-    overflow-x: auto; /* safe for long navs */
-    white-space: nowrap;
 }
 
 nav a {
