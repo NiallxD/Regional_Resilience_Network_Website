@@ -19,7 +19,10 @@
     </header>
 
     <!-- Navigation -->
-    <nav id="navbar"></nav>
+    <nav id="navbar">
+        <div class="nav-inner"></div>
+    </nav>
+
 
     <!-- Markdown content -->
     <div id="content">Loading…</div>
@@ -31,7 +34,7 @@
                 const html = marked.parse(md);
                 document.getElementById("content").innerHTML = html;
 
-                const navbar = document.getElementById("navbar");
+                const navbar = document.querySelector(".nav-inner");
                 const headings = document.querySelectorAll("#content h1, #content h2");
 
                 headings.forEach(h => {
