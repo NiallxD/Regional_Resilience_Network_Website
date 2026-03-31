@@ -371,7 +371,7 @@ body {
 .pent-shape {
   width: 200px;
   height: 190px;
-  clip-path: polygon(50% 100%, 0% 62%, 18% 0%, 82% 0%, 100% 62%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   background: white;
   border: 1px solid var(--border);
   display: flex;
@@ -396,7 +396,7 @@ body {
   border-color: rgba(61,153,112,0.3);
   width: 160px;
   height: 152px;
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  clip-path: polygon(50% 100%, 0% 62%, 18% 0%, 82% 0%, 100% 62%);
 }
 
 .pent-cell:not(.pent-center):hover .pent-shape {
