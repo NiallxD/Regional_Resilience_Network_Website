@@ -320,7 +320,7 @@ body {
 }
 
 .hex.centre {
-   font-family: var(--font-display)
+   font-family: var(--font-display) !IMPORTANT;
 }
 
 .hex.h1 { top: 0;    left: 16px;  animation-delay: 0.3s; }
