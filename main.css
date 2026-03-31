@@ -555,6 +555,7 @@ body {
   border-radius: 8px;
   overflow: hidden;
   background: white;
+  padding-bottom: 25px;
 }
 
 .exp-row {
@@ -1080,7 +1081,7 @@ footer {
 }
 
 .fade {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(14px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
