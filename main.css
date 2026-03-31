@@ -322,7 +322,7 @@ body {
 .hex.h1 { top: 0;    left: 16px;  animation-delay: 0.3s; }
 .hex.h2 { top: 0;    left: 152px; animation-delay: 0.4s; }
 .hex.h3 { top: 126px; left: 84px; animation-delay: 0.5s; }
-.hex.h4 { top: 126px; left: 220px; animation-delay: 0.6s; }
+.hex.h4 { top: 126px; left: 222px; animation-delay: 0.6s; }
 .hex.h5 { top: 252px; left: 16px; animation-delay: 0.7s; }
 .hex.h6 { top: 252px; left: 152px; animation-delay: 0.8s; }
 .hex.h7 { top: 126px; left: -54px; animation-delay: 0.9s; }
