@@ -63,11 +63,9 @@ body {
 
 .principles-left,
 .principles-right {
-    flex: 1;
-}
-
-.principles-right {
-    max-width: 420px; /* image width cxontrol */
+   flex: 1;
+   max-width: 420px; /* image width cxontrol */
+   padding-top: 90px; /* a bit hacky to align with top of pentagon section, but quick and can be fixed when we rebuilt next versioon usng flex-rows */
 }
 
 /* ─── NAV ─────────────────────────────────── */
