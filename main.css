@@ -371,7 +371,7 @@ body {
 .pent-shape {
   width: 200px;
   height: 190px;
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  clip-path: polygon(50% 100%, 0% 62%, 18% 0%, 82% 0%, 100% 62%);
   background: white;
   border: 1px solid var(--border);
   display: flex;
