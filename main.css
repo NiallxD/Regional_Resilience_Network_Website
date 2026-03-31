@@ -54,6 +54,10 @@ body {
   padding: 0 32px;
 }
 
+.principles-container {
+    display: flex;
+}
+
 /* ─── NAV ─────────────────────────────────── */
 #navbar {
   position: fixed;
