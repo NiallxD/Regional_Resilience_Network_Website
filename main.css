@@ -361,7 +361,8 @@ body {
   margin-bottom: 12px;
 }
 
-/* ─── PRINCIPLES ──────────────────────────── */
+/* ─── PRINCIPLES — PENTAGONS ─────────────────────────── */
+
 .principles-honeycomb {
   position: relative;
   width: 520px;
@@ -369,37 +370,46 @@ body {
   padding: 80px 0;
 }
 
-.principle-hex {
-  position: absolute;
+.pentagon {
   width: 160px;
   height: 160px;
+  background: white;
+  border: 1px solid var(--border);
+  clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    82% 100%,
+    18% 100%,
+    0% 38%
+  );
+  border-radius: 8px;
+  padding: 26px 22px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
-.principle-hex .p-card {
-  width: 100%;
-  height: 100%;
-}
-
-/* Center hex */
-.principle-hex.center {
+.pentagon.center {
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 26px 22px;
 }
 
-/* Surrounding hex positions */
-.principle-hex.h1 { transform: translate(-50%, -50%) translateY(-190px); }
-.principle-hex.h2 { transform: translate(-50%, -50%) translate(165px, -95px); }
-.principle-hex.h3 { transform: translate(-50%, -50%) translate(165px, 95px); }
-.principle-hex.h4 { transform: translate(-50%, -50%) translateY(190px); }
-.principle-hex.h5 { transform: translate(-50%, -50%) translate(-165px, 0); }
+/* Surrounding pentagon positions */
+.principles-hex.h1 { transform: translate(-50%, -50%) translateY(-190px); }
+.principles-hex.h2 { transform: translate(-50%, -50%) translate(165px, -95px); }
+.principles-hex.h3 { transform: translate(-50%, -50%) translate(165px, 95px); }
+.principles-hex.h4 { transform: translate(-50%, -50%) translateY(190px); }
+.principles-hex.h5 { transform: translate(-50%, -50%) translate(-165px, 0); }
+
+.principles-hex {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
 
 
 
