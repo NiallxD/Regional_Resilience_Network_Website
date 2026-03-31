@@ -319,7 +319,7 @@ body {
 }
 
 .centre {
-   font-family: var(--font-display) !IMPORTANT;
+   font-family: var(--font-display);
    font-size: 14px;
    font-weight: 700;
 }
