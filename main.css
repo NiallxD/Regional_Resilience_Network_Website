@@ -319,6 +319,10 @@ body {
   color: var(--green);
 }
 
+.hex.centre {
+   font-family: var(--font-display)
+}
+
 .hex.h1 { top: 0;    left: 16px;  animation-delay: 0.3s; }
 .hex.h2 { top: 0;    left: 152px; animation-delay: 0.4s; }
 .hex.h3 { top: 126px; left: 84px; animation-delay: 0.5s; }
