@@ -54,8 +54,20 @@ body {
   padding: 0 32px;
 }
 
-.principles-container {
+.principles-row {
     display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.principles-left,
+.principles-right {
+    flex: 1;
+}
+
+.principles-right {
+    max-width: 420px; /* image width cxontrol */
 }
 
 /* ─── NAV ─────────────────────────────────── */
