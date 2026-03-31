@@ -369,7 +369,7 @@ body {
   padding: 80px 0;
 }
 
-.hex {
+.principle-hex {
   position: absolute;
   width: 160px;
   height: 160px;
@@ -378,13 +378,13 @@ body {
   justify-content: center;
 }
 
-.hex .p-card {
+.principle-hex .p-card {
   width: 100%;
   height: 100%;
 }
 
 /* Center hex */
-.hex.center {
+.principle-hex.center {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -395,11 +395,12 @@ body {
 }
 
 /* Surrounding hex positions */
-.hex.h1 { transform: translate(-50%, -50%) translateY(-190px); }
-.hex.h2 { transform: translate(-50%, -50%) translate(165px, -95px); }
-.hex.h3 { transform: translate(-50%, -50%) translate(165px, 95px); }
-.hex.h4 { transform: translate(-50%, -50%) translateY(190px); }
-.hex.h5 { transform: translate(-50%, -50%) translate(-165px, 0); }
+.principle-hex.h1 { transform: translate(-50%, -50%) translateY(-190px); }
+.principle-hex.h2 { transform: translate(-50%, -50%) translate(165px, -95px); }
+.principle-hex.h3 { transform: translate(-50%, -50%) translate(165px, 95px); }
+.principle-hex.h4 { transform: translate(-50%, -50%) translateY(190px); }
+.principle-hex.h5 { transform: translate(-50%, -50%) translate(-165px, 0); }
+
 
 
 /* ─── APPROACH ────────────────────────────── */
