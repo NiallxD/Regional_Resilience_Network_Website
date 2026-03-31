@@ -362,43 +362,45 @@ body {
 }
 
 /* ─── PRINCIPLES ──────────────────────────── */
-.principles-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+.principles-honeycomb {
+  position: relative;
+  width: 520px;
+  margin: 0 auto;
+  padding: 80px 0;
 }
 
-.p-card {
+.hex {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hex .p-card {
+  width: 100%;
+  height: 100%;
+}
+
+/* Center hex */
+.hex.center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background: white;
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 26px 22px;
-  transition: border-color var(--tr), transform var(--tr);
-}
-.p-card:hover { border-color: rgba(61,153,112,0.4); transform: translateY(-2px); }
-.p-card.wide { grid-column: span 2; }
-
-.p-num {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  color: var(--green);
-  margin-bottom: 14px;
 }
 
-.p-card h3 {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 10px;
-}
+/* Surrounding hex positions */
+.hex.h1 { transform: translate(-50%, -50%) translateY(-190px); }
+.hex.h2 { transform: translate(-50%, -50%) translate(165px, -95px); }
+.hex.h3 { transform: translate(-50%, -50%) translate(165px, 95px); }
+.hex.h4 { transform: translate(-50%, -50%) translateY(190px); }
+.hex.h5 { transform: translate(-50%, -50%) translate(-165px, 0); }
 
-.p-card p {
-  font-size: 0.875rem;
-  color: var(--muted);
-  line-height: 1.72;
-}
 
 /* ─── APPROACH ────────────────────────────── */
 .expertise-list {
