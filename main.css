@@ -30,7 +30,6 @@
   --font-display: 'Lexend', Georgia, serif;
   --font-body:    'DM Sans', system-ui, sans-serif;
   --font-mono:    'DM Mono', monospace;
-
   --max: 1080px;
   --nav: 60px;
   --r:   6px;
@@ -321,6 +320,8 @@ body {
 
 .centre {
    font-family: var(--font-display) !IMPORTANT;
+   font-size: 20px;
+   font-weight: bold;
 }
 
 .hex.h1 { top: 0;    left: 16px;  animation-delay: 0.3s; }
