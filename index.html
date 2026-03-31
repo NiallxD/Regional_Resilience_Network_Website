@@ -1,53 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reginoal Resilience Network</title>
-
-    <link rel="stylesheet" href="main.css" />
-
-    <!-- Markdown parser -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regional Resilience Network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css" />
 </head>
-
 <body>
 
-    <!-- Full-width header -->
-    <header>
-        <img src="logo.png" class="logo" alt="Logo" />
-    </header>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#home">RRN</a>
+      <div class="nav-links">
+        <a href="#mission">Mission</a>
+        <a href="#approach">Approach</a>
+        <a href="#programs">Programs</a>
+        <a href="#history">History</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
 
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-inner"></div>
-    </nav>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Est. 1995 · Santa Barbara, CA</div>
+      <h1 class="hero-title">Regional<br><em>Resilience</em><br>Network</h1>
+      <p class="hero-mission">Strengthening the ecological integrity, economic vitality, and community resilience of landscapes and places.</p>
+      <div class="hero-ctas">
+        <a href="#approach" class="btn-primary">Our Approach</a>
+        <a href="#programs" class="btn-ghost">View Programs</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
+  <!-- MISSION + PRINCIPLES -->
+  <section id="mission" class="section section-light">
+    <div class="container">
+      <div class="section-label">Foundation</div>
+      <h2 class="section-title">Year One Guiding Principles</h2>
+      <p class="section-intro">Five interconnected principles that shape every project, partnership, and decision we make.</p>
 
-    <!-- Markdown content -->
-    <div id="content">Loading…</div>
+      <div class="principles-grid">
 
-    <script>
-        fetch("content.md")
-            .then(response => response.text())
-            .then(md => {
-                const html = marked.parse(md);
-                document.getElementById("content").innerHTML = html;
+        <div class="principle-card" data-num="01">
+          <div class="principle-icon">⬡</div>
+          <h3>Regions</h3>
+          <p>Regions exist at many scales, can be nested within one another, and often overlap across ecological and political boundaries.</p>
+        </div>
 
-                const navbar = document.querySelector(".nav-inner");
-                const headings = document.querySelectorAll("#content h1, #content h2");
+        <div class="principle-card" data-num="02">
+          <div class="principle-icon">↺</div>
+          <h3>Resilience</h3>
+          <p>The ability to bounce back from impact—fast and hard, or slow and firm—while adapting so future impacts are avoided.</p>
+        </div>
 
-                headings.forEach(h => {
-                    const id = h.textContent.toLowerCase().replace(/\s+/g, "-");
-                    h.id = id;
+        <div class="principle-card" data-num="03">
+          <div class="principle-icon">⟷</div>
+          <h3>Habitat Connectivity</h3>
+          <p>A vital ingredient of ecological integrity, sustaining wildlife movement, genetic exchange, and ecosystem function across working landscapes.</p>
+        </div>
 
-                    const link = document.createElement("a");
-                    link.href = "#" + id;
-                    link.textContent = h.textContent;
-                    navbar.appendChild(link);
-                });
-            });
-    </script>
+        <div class="principle-card" data-num="04">
+          <div class="principle-icon">◎</div>
+          <h3>Human Needs</h3>
+          <p>Economic vitality and community resilience are defined by the people of a place, and vary dramatically for regions globally.</p>
+        </div>
+
+        <div class="principle-card" data-num="05">
+          <div class="principle-icon">⬡</div>
+          <h3>Collaborative Web</h3>
+          <p>Most actions toward regional resilience result from stakeholders and decisionmakers in a political process. Elevating that process is central to our work.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach" class="section section-dark">
+    <div class="container">
+      <div class="section-label light">2026 Focus</div>
+      <h2 class="section-title light">Our Approach</h2>
+
+      <div class="approach-lead">
+        <p>Our primary approach for 2026 is to facilitate the access and analysis of spatial data required for prudent land-use policy and planning.</p>
+      </div>
+
+      <div class="expertise-grid">
+        <div class="expertise-item">
+          <div class="expertise-num">01</div>
+          <div class="expertise-body">
+            <h3>Spatial Synthesis & Communication</h3>
+            <p>Synthesizing spatial analyses and communicating these syntheses to bolster knowledge and enable wise decisions.</p>
+          </div>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-num">02</div>
+          <div class="expertise-body">
+            <h3>Wildlife Habitat Connectivity Mapping</h3>
+            <p>Mapping the needs for ecological integrity—with a specific core expertise in wildlife habitat connectivity.</p>
+          </div>
+        </div>
+        <div class="expertise-item">
+          <div class="expertise-num">03</div>
+          <div class="expertise-body">
+            <h3>Regional Web-Mapping Atlases</h3>
+            <p>Providing communities with regional atlases that meet their needs for data ownership, control, and interaction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="section section-light">
+    <div class="container">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Initial Programs</h2>
+      <p class="section-intro">Three programs form the core of our current work, each designed to fill critical gaps in how communities access and act on spatial knowledge.</p>
+
+      <div class="programs-stack">
+
+        <div class="program-card featured">
+          <div class="program-tag">Core Program</div>
+          <div class="program-header">
+            <h3>The Linkage Mapper Project</h3>
+            <div class="program-badge">Fiscally Sponsored Partner Organization</div>
+          </div>
+          <p>A flagship initiative providing wildlife habitat connectivity mapping services—including Synoptic Connectivity Modeling—to support land-use planning across regions. Linkage Mapper Services forms a major component of this project, translating complex spatial data into actionable conservation intelligence.</p>
+          <div class="program-highlight">
+            <strong>Highlight:</strong> Synoptic Connectivity Modeling — broad-scale, landscape-level connectivity analysis that informs regional planning decisions.
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-tag">Service</div>
+          <h3>Consulting Program</h3>
+          <p>Applying all of our land-use planning and policy expertise to client needs—from resilience mapping to urban planning. Similar in scope to Linkage Mapper Services, but tailored to the full range of our spatial analysis capabilities.</p>
+        </div>
+
+        <div class="program-card">
+          <div class="program-tag">Platform</div>
+          <h3>The Regional Atlas Program</h3>
+          <p>Available as a standalone service or bundled as a Linkage Mapper Service. Built on Principles of Knowledge Sharing Integrity, our atlases are designed to share mapped data across platforms—with several platforms currently under evaluation, including Data Basin with custom enhancements developed specifically for our work.</p>
+          <div class="program-example">
+            <span class="example-label">Example:</span> Santa Barbara County Conservation Blueprint, 2019 — co-created by Dr. Gallo
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Conception Coast Callout -->
+      <div class="callout-banner">
+        <div class="callout-icon">◉</div>
+        <div>
+          <h4>Conception Coast Project</h4>
+          <p>Coming off of standby and evaluating the most effective avenues to re-engage with the region. More details to follow.</p>
+        </div>
+      </div>
+
+      <!-- Regions -->
+      <div class="regions-note">
+        <div class="section-label" style="margin-bottom:12px;">Geographies</div>
+        <h3>Initial Regions of Interest</h3>
+        <p>This list is under active development and will be shared publicly when five regions have been identified—possibly sooner. Stay tuned.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HISTORY -->
+  <section id="history" class="section section-earth">
+    <div class="container">
+      <div class="section-label light">Our Story</div>
+      <h2 class="section-title light">History</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1995</div>
+          <div class="timeline-content">
+            <h4>Origins in Santa Barbara</h4>
+            <p>Regional Resilience Network began in Santa Barbara County, inspired by a grassroots effort to map and protect core wildlife habitat areas and the linkages connecting them—within the region and to neighboring regions.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1999</div>
+          <div class="timeline-content">
+            <h4>Conception Coast Project · 501(c)(3)</h4>
+            <p>Founded as Conception Coast Project and incorporated as a 501(c)(3). Provided the community with a Regional Conservation Guide plus extensive mapping, analysis, and data services.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2007</div>
+          <div class="timeline-content">
+            <h4>Broadening Horizons</h4>
+            <p>Branched out to explore the world and put lessons learned into practice. The organization entered standby, continuing to share insights and strategize for re-engagement.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2020</div>
+          <div class="timeline-content">
+            <h4>Becoming Regional Resilience Network</h4>
+            <p>Adopted the RRN name to reflect an expanded mandate—work across multiple regions and a broader focus on resilience in all its dimensions.</p>
+          </div>
+        </div>
+        <div class="timeline-item active">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-content">
+            <h4>Coming Off Standby</h4>
+            <p>Reactivating with renewed purpose. Launching the three core programs, building our team, and reconnecting with communities across regions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="section section-light">
+    <div class="container">
+      <div class="section-label">People</div>
+      <h2 class="section-title">Staff</h2>
+      <p class="section-intro">A small, expert team with deep roots in conservation science, geospatial technology, and community-based planning.</p>
+
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-photo-placeholder">JG</div>
+          <div class="team-info">
+            <h3>John Gallo, Ph.D.</h3>
+            <div class="team-title">President & Chief Science Officer</div>
+            <div class="team-bio-placeholder"><em>Bio coming soon.</em></div>
+            <div class="team-links">
+              <a href="mailto:john.gallo@regional-resilience.org" class="team-email">john.gallo@regional-resilience.org</a>
+              <div class="team-docs">
+                <a href="#" class="doc-link">CV</a>
+                <a href="#" class="doc-link">Résumé</a>
+                <a href="#" class="doc-link">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-photo-placeholder">NB</div>
+          <div class="team-info">
+            <h3>Niall Bell, MS</h3>
+            <div class="team-title">Chief Technology Officer</div>
+            <div class="team-bio-placeholder"><em>Bio coming soon.</em></div>
+            <div class="team-links">
+              <a href="mailto:niall.bell@regional-resilience.org" class="team-email">niall.bell@regional-resilience.org</a>
+              <div class="team-docs">
+                <a href="#" class="doc-link">Résumé</a>
+                <a href="#" class="doc-link">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-photo-placeholder">JB</div>
+          <div class="team-info">
+            <h3>Justin Brice</h3>
+            <div class="team-title">Senior Geospatial Facilitator</div>
+            <div class="team-bio-placeholder"><em>Bio coming soon.</em></div>
+            <div class="team-links">
+              <a href="mailto:justin.brice@regional-resilience.org" class="team-email">justin.brice@regional-resilience.org</a>
+              <div class="team-docs">
+                <a href="#" class="doc-link">Résumé</a>
+                <a href="#" class="doc-link">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Board + Volunteers -->
+      <div class="board-callout">
+        <div class="board-callout-text">
+          <h3>Board & Volunteers</h3>
+          <p>We are anticipating significant growth in 2026. If you are interested in joining, please reach out — we'd love to hear from you.</p>
+          <p class="board-note">We have openings on our <strong>Executive Board</strong>, <strong>Advisory Board / Board of Trustees</strong>, and for <strong>Volunteers</strong> and <strong>Interns</strong>.</p>
+        </div>
+        <div class="board-structure">
+          <div class="board-structure-title">Meeting Cycle</div>
+          <div class="board-cycle">
+            <div class="cycle-item"><span>Month 1</span> Executive Board only</div>
+            <div class="cycle-item"><span>Month 2</span> + Advisory Board</div>
+            <div class="cycle-item"><span>Month 3</span> + Board of Trustees</div>
+            <div class="cycle-item"><span>Month 4</span> + Volunteers & Interns</div>
+            <div class="cycle-item"><span>Month 5</span> All Together</div>
+            <div class="cycle-item"><span>Month 6</span> Executive Board only</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-label light">Reach Out</div>
+      <h2 class="section-title light">Contact</h2>
+      <p class="section-intro light">Interested in our work, a partnership, or getting involved? We want to hear from you.</p>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="contact-role">Primary Point of Contact</div>
+          <div class="contact-name">John Gallo, Ph.D.</div>
+          <a href="mailto:john.gallo@regional-resilience.org" class="contact-email">john.gallo@regional-resilience.org</a>
+        </div>
+        <div class="contact-item">
+          <div class="contact-role">Technology</div>
+          <div class="contact-name">Niall Bell, MS</div>
+          <a href="mailto:niall.bell@regional-resilience.org" class="contact-email">niall.bell@regional-resilience.org</a>
+        </div>
+        <div class="contact-item">
+          <div class="contact-role">Geospatial</div>
+          <div class="contact-name">Justin Brice</div>
+          <a href="mailto:justin.brice@regional-resilience.org" class="contact-email">justin.brice@regional-resilience.org</a>
+        </div>
+      </div>
+
+      <div class="contact-join">
+        <p>Want to join the board, volunteer, or intern? <a href="mailto:john.gallo@regional-resilience.org" class="join-link">Get in touch →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-logo">RRN</div>
+        <div class="footer-tagline">Regional Resilience Network</div>
+        <div class="footer-note">501(c)(3) · Est. 1995</div>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-nav">
+          <a href="#mission">Mission</a>
+          <a href="#approach">Approach</a>
+          <a href="#programs">Programs</a>
+          <a href="#history">History</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky nav highlight
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+
+    sections.forEach(s => observer.observe(s));
+
+    // Mobile menu toggle
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+
+    // Fade-in on scroll
+    const fadeEls = document.querySelectorAll('.principle-card, .expertise-item, .program-card, .timeline-item, .team-card');
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => fadeObserver.observe(el));
+  </script>
 
 </body>
 </html>
