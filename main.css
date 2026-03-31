@@ -396,6 +396,7 @@ body {
   border-color: rgba(61,153,112,0.3);
   width: 160px;
   height: 152px;
+  top: 21px;
   clip-path: polygon(50% 100%, 0% 62%, 18% 0%, 82% 0%, 100% 62%);
 }
 
@@ -412,7 +413,7 @@ body {
   width: 64%;
   text-align: center;
   padding: 0 4px;
-  margin-top: 8px;
+  margin-bottom: 30px;
 }
 
 .pent-shape--center .pent-inner {
