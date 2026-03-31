@@ -289,7 +289,7 @@ body {
   position: absolute;
   width: 126px;
   height: 145px;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 100%, 0% 62%, 18% 0%, 82% 0%, 100% 62%);
   background: rgba(245,239,230,0.04);
   border: 1px solid rgba(245,239,230,0.08);
   display: flex;
