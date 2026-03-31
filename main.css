@@ -319,7 +319,7 @@ body {
   color: var(--green);
 }
 
-.hex.centre {
+.centre {
    font-family: var(--font-display) !IMPORTANT;
 }
 
