@@ -337,7 +337,8 @@ body {
 }
 
 .hex.mission {
-   color: var(--green-mission);
+   background: var(--green-mission,0.1);
+   border-color: rgba(61,153,112,0.25);
 }
    
 
