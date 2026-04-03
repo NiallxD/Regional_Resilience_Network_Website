@@ -18,6 +18,7 @@
   --forest:   #2C4A3E;
   --sage:     #4E7A65;
   --green:    #3D9970;
+  --green-mission: #0B7751;
   --green-lt: rgba(61,153,112,0.1);
 
   /* Earth accents */
@@ -334,6 +335,11 @@ body {
   border-color: rgba(61,153,112,0.25);
   color: var(--green);
 }
+
+.hex.mission {
+   color: var(--green-mission);
+}
+   
 
 .centre {
    font-family: var(--font-display);
