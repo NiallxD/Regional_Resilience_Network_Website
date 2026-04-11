@@ -1092,7 +1092,7 @@ footer {
 
 .footer-meta {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   color: rgba(245,239,230,0.2);
   margin-top: 2px;
