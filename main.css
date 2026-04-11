@@ -1077,9 +1077,31 @@ footer {
 .footer-inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-start; 
+  min-width: 160px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav a {
+  color: rgba(245,239,230,0.3);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color var(--tr);
+}
+
+.footer-nav a:hover { 
+   color: rgba(245,239,230,0.7); 
 }
 
 .footer-brand {
@@ -1109,20 +1131,6 @@ footer {
   color: rgba(245,239,230,0.2);
   margin-top: 2px;
 }
-
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.footer-nav a {
-  color: rgba(245,239,230,0.3);
-  text-decoration: none;
-  font-size: 13px;
-  transition: color var(--tr);
-}
-.footer-nav a:hover { color: rgba(245,239,230,0.7); }
 
 /* ─── ANIMATION ───────────────────────────── */
 @keyframes pulse {
