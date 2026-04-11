@@ -251,6 +251,11 @@ body {
 }
 .btn-primary:hover { background: var(--sage); transform: translateY(-1px); }
 
+.card {
+   width: 100%;
+   text-align: center;
+}
+
 .btn-ghost {
   display: inline-block;
   padding: 12px 28px;
