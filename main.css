@@ -234,7 +234,6 @@ body {
 .hero-actions {
   display: flex;
   gap: 12px;
-  margin-bottom: 52px;
   flex-wrap: wrap;
 }
 
